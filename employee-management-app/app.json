@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Employee Management",
+    "slug": "employee-management-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4A90E2"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.employeemanagement.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Aplikasi memerlukan akses kamera untuk mengambil foto KTP",
+        "NSPhotoLibraryUsageDescription": "Aplikasi memerlukan akses galeri untuk memilih foto KTP"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4A90E2"
+      },
+      "package": "com.employeemanagement.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Aplikasi memerlukan akses untuk memilih foto KTP",
+          "cameraPermission": "Aplikasi memerlukan akses untuk mengambil foto KTP"
+        }
+      ]
+    ]
+  }
+}

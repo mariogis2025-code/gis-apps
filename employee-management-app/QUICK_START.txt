@@ -1,0 +1,92 @@
+========================================
+EMPLOYEE MANAGEMENT APP - QUICK START
+========================================
+
+INSTALASI & MENJALANKAN APLIKASI:
+---------------------------------
+
+1. Install Dependencies:
+   $ npm install
+
+2. Jalankan Aplikasi:
+   $ npm start
+
+3. Scan QR Code dengan Expo Go App:
+   - Android: Install dari Play Store
+   - iOS: Install dari App Store
+
+DEFAULT LOGIN:
+--------------
+Username: admin
+Password: gis2025
+
+FITUR UTAMA:
+-----------
+✓ Login/Logout
+✓ Data Karyawan (CRUD Lengkap)
+  - Tambah Data Karyawan
+  - Edit Data Karyawan
+  - Hapus Data Karyawan
+  - Upload Foto KTP
+✓ Database SQLite Lokal
+✓ Menu Absensi (Coming Soon)
+✓ Menu Merchandiser (Coming Soon)
+✓ Menu SPG (Coming Soon)
+✓ Menu Report (Coming Soon)
+
+TEKNOLOGI:
+----------
+- React Native + Expo
+- React Navigation
+- SQLite Database
+- Expo Image Picker
+- Cross Platform (Android & iOS)
+
+STRUKTUR PROJECT:
+----------------
+employee-management-app/
+├── App.js                          # Entry point
+├── src/
+│   ├── screens/                    # Semua halaman UI
+│   │   ├── LoginScreen.js
+│   │   ├── MainMenuScreen.js
+│   │   ├── DataKaryawanScreen.js
+│   │   ├── FormKaryawanScreen.js
+│   │   └── ...
+│   ├── database/
+│   │   └── database.js             # SQLite functions
+│   └── navigation/
+│       └── AppNavigator.js         # Navigation setup
+
+FIELD DATA KARYAWAN:
+-------------------
+- NIK KTP (16 digit) *required*
+- Nama Karyawan *required*
+- Alamat *required*
+- Nomor Telpon *required*
+- Nomor Rekening *required*
+- Nama Bank *required*
+- Nama Sesuai Rekening *required*
+- Foto KTP (optional)
+
+CARA TESTING:
+------------
+1. Login dengan credentials di atas
+2. Pilih menu "Data Karyawan"
+3. Tap tombol + untuk tambah data
+4. Isi semua field required
+5. Upload foto KTP (optional)
+6. Simpan data
+7. Coba edit dan hapus data
+
+BUILD APK (Optional):
+--------------------
+$ npm install -g eas-cli
+$ eas login
+$ eas build --platform android --profile preview
+
+DOKUMENTASI LENGKAP:
+-------------------
+Lihat file README.md dan PANDUAN_CEPAT.md
+
+========================================
